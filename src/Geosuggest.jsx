@@ -400,7 +400,9 @@ class Geosuggest extends React.Component {
         style={this.props.style.suggests}
         suggestItemStyle={this.props.style.suggestItem}
         suggestListClassName={this.props.suggestListClassName}
+        suggestListHiddenClassName={this.props.suggestListHiddenClassName}
         suggestItemClassName={this.props.suggestItemClassName}
+        suggestItemActiveClassName={this.props.suggestItemActiveClassName}
         suggests={this.state.suggests}
         activeSuggest={this.state.activeSuggest}
         onSuggestNoResults={this.onSuggestNoResults}

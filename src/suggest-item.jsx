@@ -36,7 +36,8 @@ export default class SuggestItem extends React.Component {
       'geosuggest-item',
       this.props.className,
       this.props.suggestItemClassName,
-      {'geosuggest-item--active': this.props.isActive}
+      {'geosuggest-item--active': this.props.isActive},
+      this.props.isActive && this.props.suggestItemActiveClassName
     );
 
     return <li className={classes}

@@ -98,13 +98,23 @@ Default: `''`
 
 Add an additional class to suggest list.
 
-#### suggestItemClassName
+#### suggestListHiddenClassName
+Type: `String`
+Default: `''`
+
+Add an additional class to hidden suggest lists.
+
+##### suggestItemClassName
 Type: `String`
 Default: `''`
 
 Add an additional class to suggest items.
 
+##### suggestItemActiveClassName
+Type: `String`
+Default: `''`
 
+Add an additional class to active suggest items.
 
 #### disabled
 Type: `Boolean`

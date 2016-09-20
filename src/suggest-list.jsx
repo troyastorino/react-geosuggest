@@ -47,7 +47,8 @@ export default class SuggestList extends React.Component {
     const classes = classnames(
       'geosuggest__suggests',
       this.props.suggestListClassName,
-      {'geosuggest__suggests--hidden': this.isHidden()}
+      {'geosuggest__suggests--hidden': this.isHidden()},
+      this.isHidden() && this.props.suggestListHiddenClassName
     );
 
     return <ul className={classes} style={this.props.style}>
@@ -60,6 +61,7 @@ export default class SuggestList extends React.Component {
           suggest={suggest}
           style={this.props.suggestItemStyle}
           suggestItemClassName={this.props.suggestItemClassName}
+          suggestItemActiveClassName={this.props.suggestItemActiveClassName}
           isActive={isActive}
           onMouseDown={this.props.onSuggestMouseDown}
           onMouseOut={this.props.onSuggestMouseOut}
